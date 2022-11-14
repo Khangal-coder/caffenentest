@@ -1,0 +1,133 @@
+body {
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 75%;
+    background: #fff;
+    width: 100%;
+}
+.header1{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    height: 48px;
+    background-color: #7a6251;
+}
+.header2{
+    height: 96px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.navi {
+    float: right;
+    position: relative;
+    height: 97px;
+    line-height: 70px;
+    width: 70%;
+}
+.logo{
+    position: absolute;
+    margin-top: 21px;
+    width: 30%;
+    margin-left :15%;
+}
+.me{
+    font-size: 20px;
+    float: left;    
+    width: 241px;
+    text-align:center;
+    list-style: none;   
+}
+.me a{
+    text-decoration: none;
+    color:#1a1b1a;
+}
+.main_banner {
+    background: url(https://coffeeshop.blob.core.windows.net/caffebene/images/main/spot_bg_131022.jpg) no-repeat center top #000;
+}
+.mainbox img{
+    margin-left: 15%;
+}
+.product_box01 {
+    float: left;
+    width: 299px;
+    height: 236px;
+    margin-top: 35px;
+    border-right: 1px dashed #c3c2c2;
+    background: url(https://coffeeshop.blob.core.windows.net/caffebene/images/main/main_menu01.jpg) no-repeat left bottom;
+}.product_box02 {
+    float: left;
+    width: 299px;
+    height: 236px;
+    margin-top: 35px;
+    border-right: 1px dashed #c3c2c2;
+    background: url(https://coffeeshop.blob.core.windows.net/caffebene/images/main/beverages.jpg) no-repeat left bottom;
+}.product_box03 {
+    float: left;
+    width: 299px;
+    height: 236px;
+    margin-top: 35px;
+    border-right: 1px dashed #c3c2c2;
+    background: url(https://coffeeshop.blob.core.windows.net/caffebene/images/main/dessert.jpg) no-repeat left bottom;
+}.product_box04 {
+    float: left;
+    width: 299px;
+    height: 236px;
+    margin-top: 35px;
+    border-right: 1px dashed #c3c2c2;
+    background: url(https://coffeeshop.blob.core.windows.net/caffebene/images/main/main_menu02.jpg) no-repeat left bottom;
+}
+.product_box {
+    margin-left: 15%;
+    overflow: hidden;
+    border: 1px solid #c3c2c2;
+    border-top: 2px solid #267ac1;
+    width: 63.6%;
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
+.product_box a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.best_menu  {
+    background: url(https://coffeeshop.blob.core.windows.net/caffebene/images/main/menu_box.png) no-repeat left top;
+    margin-left: 15%;
+    height: 40px;
+}
+.best_menu p{ 
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+.footer{
+    height: 80px;
+    background-color: #513a2a;
+    width: 100%;
+}
+.footer_wrap{
+    padding-top: 20px;
+    width: 63.6%;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: white;
+}
+.foot_logo{
+    float: left;
+}
+.copyright{
+    float:left;
+    width: 60%;
+}
+.copyright li{
+    float: left;
+    list-style: none;
+    margin-left: 15px;
+}
+.global a{
+    margin-left: 106px;
+}
