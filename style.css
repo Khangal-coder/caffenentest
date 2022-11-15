@@ -11,7 +11,7 @@ body {
     height: 48px;
     background-color: #7a6251;
 }
-.header2{
+.header2{   
     height: 96px;
     width: 100%;
     margin: auto;
@@ -23,6 +23,10 @@ body {
     height: 97px;
     line-height: 70px;
     width: 70%;
+}
+.navi h1{
+    font-size: 20px;
+    margin-top: 3px;
 }
 .logo{
     position: absolute;
@@ -97,7 +101,7 @@ body {
     margin-left: 15%;
     height: 40px;
 }
-.best_menu p{ 
+.best_menu h1{ 
     color: white;
     font-weight: bold;
     font-size: 16px;
