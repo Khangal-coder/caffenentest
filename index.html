@@ -1,79 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Coffee Coffeeshop Desserts">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="header">
-        <div class="header1">
-        </div>
-        <div class="header2">
-            <h1 class="logo"><a href="/"><img src="https://coffeeshop.blob.core.windows.net/caffebene/images/common/logo.png" alt="Caffe Bene logo"></a></h1>
-            <ul class="navi">
-                <li class="me" id="m1">
-                    <span class="navi_fir"><a href="#"><strong>ТАНИЛЦУУЛГА</strong></a></span>
-                </li>
-                <li class="me" id="m2">
-                    <span class="navi_fir"><a href="#"><strong>БРЭНД</strong></a></span>
-                </li>
-                <li class="me" id="m3">
-                    <span class="navi_fir"><a href="#"><strong>БҮТЭЭГДЭХҮҮН</strong></a></span>
-                </li>
-                <li class="me" id="m4">
-                    <span class="navi_fir"><a href="#"><strong>ХОЛБОО БАРИХ</strong></a></span>
-                </li>					
-            </ul>
-        </div>
-        </div>
-    <div id="container">
-        <div class="main_banner">
-            <div class="mainbox">
-                <a href="#"><img src="https://coffeeshop.blob.core.windows.net/caffebene/images/main/main_banner03.png" alt="Welcome to Caffe Bene"></a>
-            </div>
-        </div>
-        <div class="product">
-            <div class="best_menu">
-                <h1>ОНЦЛОХ ЦЭС</h1>
-            </div>
-            <div class="product_box">
-                <div class="product_box01">
-                    <a href="/menu/coffee"><span>Кофе</span></a>
-                </div>
-                <div class="product_box02">
-                    <a href="/menu/drinks"><span>Уух зүйл</span></a>
-                </div>
-                <div class="product_box03">
-                    <a href="/menu/desserts"><span>Дессерт</span></a>
-                </div>
-                <div class="product_box04">
-                    <a href="/menu/coffee"><span>Каппучино</span></a>
-                </div>
-                </div>
-            </div>
-        </div>
-    <div class="footer">
-        <div class="footer_wrap">
-            <div class="foot_logo">
-                <img src="https://coffeeshop.blob.core.windows.net/caffebene/images/common/footer_logo.png" alt="Caffe Bene logo">
-            </div>
-            <div class="copyright">
-                <ul class="wide2">
-                    <li class="first">© Caffe Bene Mongolia |</li>
-                    <li>☎ 75553000 |</li>
-                    <li class="last">Bldg 5, Hunnu 2222, Khoroo 18, Khan Uul, Ulaanbaatar 17011</li>
-                </ul>
-            </div>
-            <div class="global">
-                <a><img src="https://coffeeshop.blob.core.windows.net/caffebene/images/btn/btn_globalsite.png" alt="Caffe Bene ГЛОБАЛЬ САЙТ"></a>
-            </div>
-            </div>
-        </div>
+function func1(){
+    var s = prompt();
+    var sum = 0;
     
-    
-</body>
-</html>
+    for(var i=0;i<s.length;i++){
+        sum = sum + parseInt(s[i]);
+    }
+    var s1,s2="";
+    s1 = sum.toString();
+    for(var i=s1.length-1;i>=0;i--)s2 += s1[i];
+    if(s1 == s2){
+        console.log("Yes");
+    }
+    else{
+        console.log("No");
+    }
+}
+function func2(){
+    var wolf = 25;
+    var rabbit = 18;
+    var dis = prompt();
+    var speeddis = wolf-rabbit;
+    var time = dis / speeddis;
+    time=time*3600;
+    time = Math.floor(time);
+    var minut = Math.floor(time/60);
+    time = time %60;
+    console.log(minut , time);
+}
+function func3(){
+    var val = prompt();
+    var floor=1;
+    var ent = 1;
+    var num = 1;
+    var limit = 9*3*4;
+    if(val > limit){
+        console.log("limit exceeded");
+        return;
+    }
+    for(var i=2;i<=val;i++){
+        num+=1;
+        if(num == 5){
+            num=1;
+            floor+=1;
+        }
+        if(floor==10){
+            floor=1;
+            ent+=1;
+        }
+    }
+    console.log(ent , floor , num);
+}
+function gcd(x,y){
+    while(y) {
+        var t = y;
+        y = x % y;
+        x = t;
+    }
+    return x;
+}
+function func4(){
+    var a = prompt();
+    var b = prompt();
+    var c = prompt();
+    var g = gcd(a,b);
+    g = gcd(g , c);
+    console.log(g);
+
+}
+function func5(){
+    const start = new Date();
+    var v = prompt();
+    if(start.getHours() >= 12){
+        v = Math.sqrt(v);
+        v = Math.round(v*100)/100;
+    }
+    else{
+        v = v*v;
+    }
+    console.log(v);
+}
+function func6(){
+    var sen = "Тэргүүлэх эдийн засгуудад мөнгөний бодлого, санхүүгийн нөхцөл чангарч байгаа нь глобал эдийн засгийн өсөлт саарахад нөлөөлж байна. Энэ бодлого, өсөлтийн төлөв нь түүхий эдийн зах зээлд нөлөөлж, эрчим хүчнээс бусад түүхий эдүүдийн үнэ буурах төлөвтэй боллоо";
+    var str = prompt();
+    var len = str.length;
+    var ok = 0;
+    var lol = str.toLowerCase();
+    for(var i=0;i<sen.length;i++){
+        var s="";
+        for(var j=i;j<=i+len-1;j++){
+            s+=sen[j];
+        }
+        if(lol==s.toLowerCase()){
+            ok=1;
+            break;
+        }
+    }
+    if(ok==1)console.log("Yes");
+    else console.log("No");
+}
+function func7(){
+    var x = prompt();
+    var y = Math.pow(2,30);
+    for(var i=30;i>=0;i--){
+        var ok=0;
+        if(x >= y){
+            ok=1;
+            x-=y;
+        }
+        if(ok==1)
+        console.log("2 ^ " ,i);
+        y/=2;
+    }
+}
