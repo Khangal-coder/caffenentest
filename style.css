@@ -4,6 +4,9 @@ body {
     background: #fff;
     width: 100%;
 }
+#diss{
+    visibility: hidden;
+}
 .header1{
     width: 100%;
     margin: auto;
